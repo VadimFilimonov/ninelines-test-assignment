@@ -1,0 +1,56 @@
+.javascript-level {
+    padding: 60px 20px 65px 20px;
+    display: flex;
+
+    @media screen and (min-width: 1px) and (max-width: 479px) {
+        flex-wrap: wrap;
+    }
+
+    &__chart-container {
+        position: relative;
+        max-width: 253px;
+        margin-right: 65px;
+
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+            max-width: 200px;
+            margin-right: 40px;
+        }
+
+        @media screen and (min-width: 1px) and (max-width: 479px) {
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__chart {
+        width: 100%;
+    }
+
+    &__indicator {
+        transition: 1.8s ease;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(calc(-100% + 15px)) rotate(0);
+        transform-origin: calc(100% - 15px) 50%;
+
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+            max-width: 60px;
+        }
+    }
+
+    &__value {
+        color: $color-accent;
+        font-family: $font-title;
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 1;
+        position: relative;
+    }
+
+    &__shadow {
+        opacity: 0.3;
+        position: absolute;
+        right: 0;
+    }
+}

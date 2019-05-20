@@ -1,0 +1,54 @@
+.skills {
+    padding: 35px 20px 0px 20px;
+    border-top: 2px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+
+    &__subtitle {
+        margin-bottom: 25px;
+    }
+
+    &__list {
+        list-style: none;
+        margin: 0;
+    }
+
+    &__item {
+        margin-bottom: 40px;
+    }
+
+    &__label {
+        position: relative;
+        padding-left: 27px;
+        box-sizing: border-box;
+        cursor: pointer;
+        font-family: $font-text;
+    }
+
+    &__input:checked + &__custom-checkbox {
+        background-color: $color-accent;
+        background-image: url(../images/checked.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+
+    &__input:focus ~ &__value {
+        color: $color-accent;
+        text-decoration: underline;
+    }
+
+    &__custom-checkbox {
+        width: 19px;
+        height: 19px;
+        display: block;
+        background-color: #eeeeee;
+        border-radius: 5px;
+        position: absolute;
+        left: 0;
+    }
+
+    &__value {
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+    }
+}

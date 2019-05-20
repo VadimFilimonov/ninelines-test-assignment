@@ -1,0 +1,28 @@
+.form {
+    &__button {
+        margin-top: 30px;
+        appearance: none;
+        color: $color-title;
+        font-family: $font-title;
+        font-weight: 500;
+        padding: 15px;
+        border: 2px solid $color-title;
+        background-color: transparent;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        display: none; 
+
+        &:focus {
+            color: $color-accent;
+            border-color: $color-accent;
+            outline: none;
+        }
+
+        &:hover {
+            color: #fff;
+            border-color: $color-accent;
+            background-color: $color-accent;
+        }
+    }
+}

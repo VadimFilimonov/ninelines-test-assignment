@@ -1,0 +1,29 @@
+- 
+    var skillsList = [
+        { value: 'HTML5', status: 'checked' },
+        { value: 'SASS', status: 'checked' },
+        { value: 'VANILLAJS', status: 'checked', javascript: 'true' },
+        { value: 'GIT', status: 'checked' },
+        { value: 'CSS3', status: 'checked' },
+        { value: 'LESS' },
+        { value: 'ANGULAR', javascript: 'true' },
+        { value: 'FOUNDATION' },
+        { value: 'БЭМ', status: 'checked' },
+        { value: 'GULP', status: 'checked', javascript: 'true' },
+        { value: 'JQUERY', status: 'checked', javascript: 'true' },
+        { value: 'BOOTSTRAP' }
+    ];
+
+.form__skills.skills
+    h2.skills__subtitle.subtitle Навыки
+    ul.skills__list.grid-x.large-up-4.medium-up-4.small-up-2
+        each n in skillsList
+            li.skills__item.cell
+                label.skills__label
+                    input.skills__input.js-level-input.visually-hidden(type="checkbox" 
+                        name=n.value 
+                        checked=n.status
+                        data-js=n.javascript
+                        )
+                    span.skills__custom-checkbox
+                    span.skills__value= n.value
