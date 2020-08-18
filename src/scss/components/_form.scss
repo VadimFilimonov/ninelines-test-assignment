@@ -1,28 +1,25 @@
 .form {
-    &__button {
-        margin-top: 30px;
-        appearance: none;
-        color: $color-title;
-        font-family: $font-title;
-        font-weight: 500;
-        padding: 15px;
-        border: 2px solid $color-title;
-        background-color: transparent;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 40px;
-        display: none; 
+	&__button {
+		appearance: none;
+		display: none;
+		margin: 30px 20px 40px;
+		border: 2px solid $color-title;
+		padding: 15px;
+		font-family: $font-title;
+		font-weight: 500;
+		color: $color-title;
+		background-color: transparent;
 
-        &:focus {
-            color: $color-accent;
-            border-color: $color-accent;
-            outline: none;
-        }
+		&:focus {
+			outline: none;
+			border-color: $color-accent;
+			color: $color-accent;
+		}
 
-        &:hover {
-            color: #fff;
-            border-color: $color-accent;
-            background-color: $color-accent;
-        }
-    }
+		&:hover {
+			border-color: $color-accent;
+			color: #fff;
+			background-color: $color-accent;
+		}
+	}
 }

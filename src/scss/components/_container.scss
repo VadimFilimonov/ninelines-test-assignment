@@ -1,14 +1,13 @@
 .container {
-    min-height: 100vh;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    background-color: #ddd;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	min-height: 100vh;
+	background-color: #ddd;
 
-    &__inner {
-        padding: 30px 20px 60px 20px;
-        padding: 0;
-        background-color: $color-bg;
-        background-image: url(../images/background.png);
-    }
+	&__inner {
+		padding: 30px 20px 60px;
+		background-image: url("../images/background.png");
+		background-color: $color-bg;
+	}
 }
