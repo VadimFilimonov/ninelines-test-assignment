@@ -2,53 +2,53 @@
 	border-top: 2px solid #f0f0f0;
 	border-bottom: 2px solid #f0f0f0;
 	padding: 35px 20px 0;
+}
 
-	&__subtitle {
-		margin-bottom: 25px;
-	}
+.skills__subtitle {
+	margin-bottom: 25px;
+}
 
-	&__list {
-		list-style: none;
-		margin: 0;
-	}
+.skills__list {
+	list-style: none;
+	margin: 0;
+}
 
-	&__item {
-		margin-bottom: 40px;
-	}
+.skills__item {
+	margin-bottom: 40px;
+}
 
-	&__label {
-		position: relative;
-		padding-left: 27px;
-		box-sizing: border-box;
-		font-family: $font-text;
-		cursor: pointer;
-	}
+.skills__label {
+	position: relative;
+	padding-left: 27px;
+	box-sizing: border-box;
+	font-family: $font-text;
+	cursor: pointer;
+}
 
-	&__custom-checkbox {
-		position: absolute;
-		left: 0;
-		display: block;
-		border-radius: 5px;
-		width: 19px;
-		height: 19px;
-		background-color: #eee;
-	}
+.skills__custom-checkbox {
+	position: absolute;
+	left: 0;
+	display: block;
+	border-radius: 5px;
+	width: 19px;
+	height: 19px;
+	background-color: #eee;
+}
 
-	&__value {
-		font-weight: 500;
-		letter-spacing: 0.06em;
-		text-transform: uppercase;
-	}
+.skills__value {
+	font-weight: 500;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
 
-	&__input:checked + &__custom-checkbox {
-		background-image: url("../images/checked.png");
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		background-color: $color-accent;
-	}
+.skills__input:checked + .skills__custom-checkbox {
+	background-image: url("../images/checked.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-color: $color-accent;
+}
 
-	&__input:focus ~ &__value {
-		text-decoration: underline;
-		color: $color-accent;
-	}
+.skills__input:focus ~ .skills__value {
+	text-decoration: underline;
+	color: $color-accent;
 }

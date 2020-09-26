@@ -1,7 +1,7 @@
 let form;
 
 const findElements = () => {
-	form = document.querySelector('.form');
+	form = document.querySelector(".form");
 };
 
 const onError = (error) => {
@@ -18,12 +18,12 @@ const onSuccess = (data) => {
 	form.reset();
 };
 
-const sendForm = () => {
-	return fetch(form.action, {
-		method: 'post',
+const sendForm = () => (
+	fetch(form.action, {
+		method: "post",
 		body: new FormData(form),
-	});
-};
+	})
+);
 
 const onSubmit = (event) => {
 	event.preventDefault();
@@ -34,7 +34,7 @@ const onSubmit = (event) => {
 };
 
 const subscribe = () => {
-	form.addEventListener('submit', onSubmit);
+	form.addEventListener("submit", onSubmit);
 };
 
 export default () => {

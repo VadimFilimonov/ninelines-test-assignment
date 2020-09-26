@@ -1,25 +1,23 @@
-.form {
-	&__button {
-		appearance: none;
-		display: none;
-		margin: 30px 20px 40px;
-		border: 2px solid $color-title;
-		padding: 15px;
-		font-family: $font-title;
-		font-weight: 500;
-		color: $color-title;
-		background-color: transparent;
+.form__button {
+	appearance: none;
+	display: none;
+	margin: 30px 20px 40px;
+	border: 2px solid $color-title;
+	padding: 15px;
+	font-family: $font-title;
+	font-weight: 500;
+	color: $color-title;
+	background-color: transparent;
 
-		&:focus {
-			outline: none;
-			border-color: $color-accent;
-			color: $color-accent;
-		}
+	&:focus {
+		outline: none;
+		border-color: $color-accent;
+		color: $color-accent;
+	}
 
-		&:hover {
-			border-color: $color-accent;
-			color: #fff;
-			background-color: $color-accent;
-		}
+	&:hover {
+		border-color: $color-accent;
+		color: #fff;
+		background-color: $color-accent;
 	}
 }

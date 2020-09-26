@@ -2,70 +2,70 @@
 	display: flex;
 	padding: 30px 20px 35px;
 
-	&__photo-container {
-		flex-shrink: 0;
-		margin-right: 22px;
-		max-width: 138px;
-		box-sizing: border-box;
-
-		@media screen and (min-width: 480px) and (max-width: 767px) {
-			max-width: 120px;
-		}
-
-		@media screen and (min-width: 1px) and (max-width: 479px) {
-			margin-right: 0;
-			margin-bottom: 30px;
-		}
+	@media screen and (min-width: 1px) and (max-width: 479px) {
+		flex-wrap: wrap;
 	}
+}
 
-	&__photo {
-		border-radius: 50%;
-	}
+.basic-info__photo-container {
+	flex-shrink: 0;
+	margin-right: 22px;
+	max-width: 138px;
+	box-sizing: border-box;
 
-	&__about {
-		flex-grow: 1;
-		border: none;
-
-		@media screen and (min-width: 1px) and (max-width: 479px) {
-			width: 100%;
-		}
-	}
-
-	&__input {
-		margin-bottom: 30px;
-		border: none;
-		border-bottom: 2px solid $color-border;
-		padding: 0;
-		padding-bottom: 10px;
-		height: auto;
-		box-shadow: none;
-		font-family: $font-text;
-		font-weight: 500;
-		font-size: 12px;
-		line-height: 1;
-		letter-spacing: 0.075rem;
-		text-transform: uppercase;
-		color: $color-text;
-		background-color: transparent;
-
-		&::placeholder {
-			color: $color-text;
-		}
-
-		&:focus {
-			border: none;
-			border-bottom: 2px solid $color-accent;
-			box-shadow: none;
-			color: $color-accent;
-			background-color: transparent;
-		}
-
-		&:last-child {
-			margin-bottom: 0;
-		}
+	@media screen and (min-width: 480px) and (max-width: 767px) {
+		max-width: 120px;
 	}
 
 	@media screen and (min-width: 1px) and (max-width: 479px) {
-		flex-wrap: wrap;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+}
+
+.basic-info__photo {
+	border-radius: 50%;
+}
+
+.basic-info__about {
+	flex-grow: 1;
+	border: none;
+
+	@media screen and (min-width: 1px) and (max-width: 479px) {
+		width: 100%;
+	}
+}
+
+.basic-info__input {
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 2px solid $color-border;
+	padding: 0;
+	padding-bottom: 10px;
+	height: auto;
+	box-shadow: none;
+	font-family: $font-text;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 1;
+	letter-spacing: 0.075rem;
+	text-transform: uppercase;
+	color: $color-text;
+	background-color: transparent;
+
+	&::placeholder {
+		color: $color-text;
+	}
+
+	&:focus {
+		border: none;
+		border-bottom: 2px solid $color-accent;
+		box-shadow: none;
+		color: $color-accent;
+		background-color: transparent;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
 	}
 }

@@ -4,10 +4,10 @@
 	height: 100%;
 	min-height: 100vh;
 	background-color: #ddd;
+}
 
-	&__inner {
-		padding: 30px 20px 60px;
-		background-image: url("../images/background.png");
-		background-color: $color-bg;
-	}
+.container__inner {
+	padding: 30px 20px 60px;
+	background-image: url("../images/background.png");
+	background-color: $color-bg;
 }
